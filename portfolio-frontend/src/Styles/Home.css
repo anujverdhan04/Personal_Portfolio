@@ -1,0 +1,175 @@
+/* Home background styling */
+.home-background {
+    position: relative;
+    background-image: url('../assets/BBG.jpg'); /* Ensure this is your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;  /* Full viewport height */
+    width: 100vw;   /* Full viewport width */
+    color: rgb(7, 7, 7);
+    display: flex;
+    flex-direction: column; /* Stack header on top */
+    overflow: hidden; /* Prevent overflow */
+}
+.home-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Overlay is above the background */
+}
+
+/* Header styling */
+.header-container {
+    width: 100%;
+    z-index: 3; /* Ensure header is above background overlay */
+}
+
+/* Dark overlay on the background */
+.home-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Overlay is above the background */
+}
+
+/* Content area styling */
+.content {
+    flex-grow: 1; /* Allow the content to take up the remaining space */
+    display: flex;
+    justify-content: left; /* Center content horizontally */
+    align-items: left; /* Center content vertically */
+    position: relative;
+    z-index: 2; /* Ensure content is above background overlay */
+    text-align: center; /* Center text */
+    color: white; /* Text color for visibility */
+}
+
+/* Text content styling */
+.Basic {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    color: white;
+    padding: 20px;  /* Padding to add space */
+    margin-left: 40px; /* Shift slightly to the left (adjust this value as needed) */
+    max-width: 600px;  
+}
+.Basic h1 {
+    font-size: 2rem;  /* Adjust the size of the main heading */
+    margin-bottom: 10px;  /* Space between the headings */
+}
+
+.Basic h2 {
+    /* color: #004953; */
+    /* color: #092B50; */
+    color: #6d7b8d;
+    text-shadow: 4px 4px 6px rgba(99, 99, 99, 0.6);
+    font-size: 2rem;  /* Adjust size of the second heading */
+    margin-bottom: 5px;  
+}
+
+.Basic h3 {
+    font-size: 1rem;  /* Adjust size of the third heading */
+}
+
+/* Optional image container if needed */
+.image-container {
+    display: none; /* Remove if you don't need a separate image container */
+}
+
+/* If you want to keep the image and center it */
+.image-container img {
+    width: 100%; /* Set the width of the image */
+    height: auto; /* Keep the aspect ratio */
+    object-fit: cover; /* Ensure the image covers the space */
+    z-index: 2; /* Ensure image is above overlay */
+}
+
+.intro {
+    /* color: white;  */
+    color: #6d7b8d;/* Text color */
+    text-align:left ; /* Center text horizontally */
+    top: 0;
+    padding: 100px 20px 20px; /* Add top padding to avoid overlap with header */
+    font-size: 2rem; /* Font size for the heading */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6); /* Optional: Add shadow for better visibility */
+    position: relative; /* Position relative for z-index to take effect */
+    z-index: 2; /* Ensure it stays above any overlays */
+}
+
+
+/* You can add a margin or border to separate it visually */
+.intro h2 {
+    margin: 0; /* Remove default margin */
+}
+
+
+/* About section text content */
+.about-section {
+    margin-top: 50px; /* Adjust the spacing between sections */
+    padding: 20px;    /* Padding for aesthetics */
+    color: #6d7b8d;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: left; /* Center content vertically */
+}
+.about-section h3 {
+    color: #6d7b8d;
+    /* text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6); Same shadow */
+    font-size: 2rem;
+    margin-bottom: 5px; /* Space below heading */
+    font-weight: bold; /* Optional: Bold text */
+}
+
+/* About section box container */
+.about-content {
+    color: rgb(203, 203, 203);
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Add space between the about text and details */
+    text-align: left;
+    line-height: 1.4;
+    padding: 20px;
+    border-radius: 8px;
+    width: 40%; /* Narrow width to align left */
+    margin-left: 50px; /* Position towards the left */ 
+    border: 1px solid rgba(41, 51, 44, 0.553); /* Optional border, can be removed */
+}
+
+/* Introductory text styling */
+.intro-text {
+    position: relative;
+    color: white;
+    z-index: 2;
+    text-align: left;
+    padding: 0px;  /* Same padding */
+    margin-left: 1px; /* Same left margin */
+    max-width: 600px; /* Ensure the width limit is the same */
+    margin: 1px 0; /* Same vertical margin to space elements consistently */
+}
+
+/* Styling for the about details */
+.about-details p {
+    position: relative;
+    margin: 1px 0; /* Add spacing between personal details */
+    text-align: left;
+    color: white;
+    z-index: 3;
+    padding: 0px;  /* Padding to add space */
+    margin-left: 1px; /* Shift slightly to the left (adjust this value as needed) */
+
+}
+
+/* Optional Box shadow to make the section stand out slightly */
+.about-content {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow to give depth */
+}

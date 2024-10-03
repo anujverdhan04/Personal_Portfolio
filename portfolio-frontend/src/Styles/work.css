@@ -1,0 +1,68 @@
+/* Styles for Work Component */
+.work-page {
+    padding: 0 20px; /* Set top padding to 0 */
+    background-image: url('../assets/BBG.jpg'); /* Set background image */
+    background-size: cover; /* Ensure image covers the entire section */
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    background-position: center; /* Center the background image */
+    color: white; /* Default text color */
+    min-height: 100vh; /* Full viewport height */
+    width: 100vw;   /* Full viewport width */
+    position: relative; /* Ensure content sits above the background */
+    display: flex;
+    flex-direction: column; /* Stack components */
+    justify-content: flex-start; /* Start components from the top */
+    overflow: hidden; /* Prevent overflow */
+    z-index: 1; /* Ensure the content is above the footer */
+}
+
+
+/* Section styling */
+.work-section {
+    top: 0px;
+    margin-bottom: 40px; /* Spacing between sections */
+    background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent background for readability */
+    padding: 20px; /* Inner padding for each section */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Headings */
+.work-section h2 {
+    font-size: 2.5rem; /* Adjust font size */
+    color: #6d7b8d; /* Muted color for headings */
+    margin-bottom: 20px;
+}
+
+/* Grid layout for projects, internships, and skills */
+.project-grid, .internship-grid, .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Spacing between cards */
+}
+
+/* Card styling */
+.work-card, .skill-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent cards */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect for depth */
+    transition: transform 0.2s ease;
+}
+
+/* Hover effect for cards */
+.work-card:hover, .skill-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Card headings */
+.work-card h3, .skill-card h4 {
+    font-size: 1.5rem; /* Adjust font size for titles */
+    color: #FFD700; /* Gold color for card titles */
+    margin-bottom: 10px;
+}
+
+/* Card paragraph text */
+.work-card p, .skill-card p {
+    font-size: 1rem; /* Adjust font size for text */
+    color: white; /* White color for text */
+}

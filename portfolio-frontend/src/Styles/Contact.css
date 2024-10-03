@@ -1,0 +1,100 @@
+/* Main Contact Page Styles */
+.contact-page {
+    position: relative;
+    background-image: url('../assets/BBG.jpg'); /* Ensure this is your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;  /* Full viewport height */
+    width: 100vw;   /* Full viewport width */
+    color: white; /* Default text color */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    padding: 40px; /* Add some padding */
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between form and text */
+    width: 100%; /* Full width */
+}
+
+/* Contact Form Styling */
+.contact-form {
+    width: 35%; /* Adjusted width for form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px rgba(211, 180, 45, 0.1);
+    margin-right: auto; /* Align form to the left */
+}
+
+/* Contact Text Styling */
+.contact-text {
+    width: 45%; 
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contact Details Styling */
+.contact-box {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    border: 0px solid #a5a18a; /* Gold border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 70px; /* Space inside the box */
+    margin-top: 40px; /* Space above this box */
+    box-shadow: 6px 6px 10px rgba(211, 180, 45, 0.1);
+}
+
+.contact-item {
+    margin: 0 20px; /* Space between items */
+    text-align: center; /* Center align text in items */
+}
+.contact-link {
+    color: #FFD700; /* Gold color for links */
+    text-decoration: none; /* No underline */
+}
+
+.contact-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Form Inputs and Button Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #FFD700; /* Label color */
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d3d3c79e;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: black; /* Set background color for inputs */
+    color: white; /* Set text color for inputs */
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #FFD700; /* Gold color */
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #e0c100; /* Slightly darker gold on hover */
+}

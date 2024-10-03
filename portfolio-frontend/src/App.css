@@ -1,0 +1,55 @@
+/* App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding is included in width/height */
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-size: 16px; /* Base font size */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure root takes up full viewport height */
+}
+
+.app-container {
+  flex: 1; /* Allow it to grow to fill space */
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  padding: 20px; /* Internal padding */
+}
+
+.main-content {
+  padding: 20px;
+  flex: 1; /* Allow main content to grow and fill available space */
+}
+
+.main-content {
+  margin-top: 70px; /* Adjust this based on header height */
+  padding: 20px; /* Inner padding for main content */
+}
+
+
+
+
+
+/* Responsive media query */
+@media (max-width: 768px) {
+  .header-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .header-logo {
+      margin-bottom: 15px;
+  }
+
+  .main-content {
+      padding: 10px;
+  }
+}
