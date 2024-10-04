@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from '../components/Header/Header';
 import axios from 'axios'; // Assuming you'll use Axios to fetch from Django API.
 import BBG from "../assets/BBG.jpg"; // Ensure the image path is correct
-import "../Styles/Work.css"; // Adjust the path if Work.css is in Styles
+import "../Styles/work.css"; // Adjust the path if Work.css is in Styles
 
 
 
