@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "../Styles/contact.css";
+import "../Styles/Contact.css";
 import BBG from "../assets/BBG.jpg";
 
 const Contact = () => {
