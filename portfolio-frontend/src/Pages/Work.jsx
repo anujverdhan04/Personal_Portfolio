@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../components/Header/Header';
 import axios from 'axios'; // Assuming you'll use Axios to fetch from Django API.
-import "../Styles/Work.css"; // Ensure this path is correct
+import "../Styles/Work.css";
 import BBG from "../assets/BBG.jpg"; // Ensure the image path is correct
 
 
 const Work = () => {
-    const [projects, setProjects] = useState([]);
+    const [projects, setProjects] = useState([]);cancelAnimationFram
     const [internships, setInternships] = useState([]);
     const [skills, setSkills] = useState([]); // Add state for skills
 
