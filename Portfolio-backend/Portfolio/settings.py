@@ -39,6 +39,7 @@ MIDDLEWARE = [
 
 # CORS Configuration (adjust as needed for frontend)
 CORS_ALLOWED_ORIGINS = [
+    "https://personal-portfolio-frontend-99m7.onrender.com"
     "http://localhost:5173",  # Adjust if React app runs from a different URL
 ]
 
