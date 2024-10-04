@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "../Styles/contact.css";
+import BBG from "../assets/BBG.jpg";
 
 const Contact = () => {
     const [formData, setFormData] = useState({

@@ -5,7 +5,7 @@ import Home from './Pages/Home';
 import Work from './Pages/Work';
 import { getProjects, getSkills , getInternships } from './services/api';
 import axios from 'axios';
-import Header from './components/Header/header';  // The single Header for the whole app
+import Header from './components/Header/Header';  // The single Header for the whole app
 import './App.css'; // Global styles
 import Contact from './Pages/Contact'; // Import the Contact page
 
