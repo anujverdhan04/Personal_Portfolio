@@ -27,23 +27,26 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+  
     "django.middleware.security.SecurityMiddleware",
-    "corsheaders.middleware.CorsMiddleware",  # Should be here
+    "corsheaders.middleware.CorsMiddleware",  
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+
 ]
 
 
 # CORS Configuration (adjust as needed for frontend)
 CORS_ALLOWED_ORIGINS = [
     "https://personal-portfolio-frontend-99m7.onrender.com",
-    "http://localhost:5173",  # Adjust if React app runs from a different URL
-     "127.0.0.1",
+    "http://localhost:5173",
+    "http://127.0.0.1",  # Note the addition of 'http://' for consistency
 ]
+
 
 # URL Configuration
 ROOT_URLCONF = "Portfolio.urls"
@@ -105,7 +108,12 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Environmental variables (for production)
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'your-default-secret-key')
 DEBUG = os.environ.get('DJANGO_DEBUG', 'True') == 'True'
-ALLOWED_HOSTS = ["https://personal-portfolio-dxah.onrender.com", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = [
+    "personal-portfolio-dxah.onrender.com",
+    "personal-portfolio-frontend-99m7.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
 
 
 # For connecting to external databases in production (if needed)
