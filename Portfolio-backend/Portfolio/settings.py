@@ -103,7 +103,8 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Environmental variables (for production)
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'your-default-secret-key')
 DEBUG = os.environ.get('DJANGO_DEBUG', 'False') == 'True'
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '*').split(',')
+ALLOWED_HOSTS = ["https://personal-portfolio-dxah.onrender.com", "localhost", "127.0.0.1"]
+
 
 # For connecting to external databases in production (if needed)
 DATABASE_URL = os.environ.get('DATABASE_URL')
