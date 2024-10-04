@@ -7,7 +7,7 @@ const API_URL = 'https://personal-portfolio-dxah.onrender.com/api/';
 // Fetch Projects
 export const getProjects = async () => {
     try {
-        const response = await axios.get(`${API_URL}projects/`);
+        const response = await axios.get(`${import.meta.env.VITE_API_URL}projects/`);
         return response.data;  // Return only the data
     } catch (error) {
         console.error('Error fetching projects:', error);  // Log error to console
@@ -18,7 +18,7 @@ export const getProjects = async () => {
 // Fetch Skills
 export const getSkills = async () => {
     try {
-        const response = await axios.get(`${API_URL}skills/`);
+        const response = await axios.get(`${import.meta.env.VITE_API_URL}skills/`);
         return response.data;  // Return only the data
     } catch (error) {
         console.error('Error fetching skills:', error);  // Log error to console
@@ -29,7 +29,7 @@ export const getSkills = async () => {
 // Fetch Internship
 export const getInternships = async () => {
     try {
-        const response = await axios.get(`${API_URL}internships/`);
+        const response = await axios.get(`${import.meta.env.VITE_API_URL}internships/`);
         return response.data;  // Return only the data
     } catch (error) {
         console.error('Error fetching internships:', error);  // Log error to console

@@ -17,7 +17,7 @@ const App = () => {
  
     // Fetch data from Django API (example endpoint)
     useEffect(() => {
-        axios.get('http://127.0.0.1:8000/api/example/')
+        axios.get('https://personal-portfolio-dxah.onrender.com/api/example/') 
             .then(response => {
                 setData(response.data.message);
             })

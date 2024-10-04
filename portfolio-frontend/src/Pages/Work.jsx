@@ -13,9 +13,10 @@ const Work = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const projectResponse = await axios.get('http://127.0.0.1:8000/api/projects/'); // Update API endpoint
-                const internshipResponse = await axios.get('http://127.0.0.1:8000/api/internships/'); // Your API endpoint
-                const skillResponse = await axios.get('http://127.0.0.1:8000/api/skills/'); // Fetch skills from the API
+                // Update API endpoints to the deployed backend
+                const projectResponse = await axios.get('https://personal-portfolio-dxah.onrender.com/api/projects/');
+                const internshipResponse = await axios.get('https://personal-portfolio-dxah.onrender.com/api/internships/');
+                const skillResponse = await axios.get('https://personal-portfolio-dxah.onrender.com/api/skills/');
 
                 setProjects(projectResponse.data);
                 setInternships(internshipResponse.data);
@@ -28,7 +29,6 @@ const Work = () => {
     }, []);
 
     return (
-        
         <div className="work-page">
             <img src={BBG} alt="Anuj Verdhan" />
             <div className="work-section">
@@ -37,9 +37,9 @@ const Work = () => {
                     {projects.map(project => (
                         <div key={project.id} className="work-card">
                             <h3>{project.title}</h3>
-                            <p>Discription:<br></br>{project.description}</p>
-                            <br></br>
-                            <p>Skills:<br></br>{project.skills}</p>
+                            <p>Description:<br />{project.description}</p>
+                            <br />
+                            <p>Skills:<br />{project.skills}</p>
                             <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
                         </div>
                     ))} 
@@ -71,7 +71,6 @@ const Work = () => {
                 </div>
             </div>
         </div>
-
     );
 };
 
