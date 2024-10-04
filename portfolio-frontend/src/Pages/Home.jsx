@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header/Header'; // Ensure this path is correct
-import "../Styles/home.css";
+import "../Styles/Home.css";
 import BBG from "../assets/BBG.jpg";
 
 const HomePage = () => {

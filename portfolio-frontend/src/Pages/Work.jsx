@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../components/Header/Header';
 import axios from 'axios'; // Assuming you'll use Axios to fetch from Django API.
-import "../Styles/work.css"; // Link to your CSS for styling
+import "../Styles/Work.css"; // Link to your CSS for styling
 import BBG from "../assets/BBG.jpg";
 
 const Work = () => {
